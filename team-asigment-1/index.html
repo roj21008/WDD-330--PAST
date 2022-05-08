@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- task 1-->
+    <input id="input1" type="text" >
+    <button id="Button-1" onclick="req1()">Submit</button>
+    <div id="req-1">
+
+    </div>
+
+    <!-- task 2-->
+    <input id="input2" type="text" >
+    <button id="Button-2" onclick="req2()">Submit</button>
+    <div id="req-2">
+
+    </div>
+
+    <!-- task 3-->
+    <input id="input3_1" type="number" >
+    <input id="input3_2" type="number" >
+    <button id="Button-3" onclick="req3()">+</button>
+    <div id="req-3">
+
+    </div>
+
+
+<script>
+        
+    function req1(){
+        const input1 = document.getElementById("input1").value;
+        const elementOne = document.getElementById("req-1")
+        elementOne.innerHTML = "You entered : " + input1;     
+    }
+
+    function req2(){
+        const input2 = document.getElementById("input2").value;
+        const elementTwo = document.getElementById("req-2")
+        const input2_num = parseInt(input2);
+        if(input2_num !==NaN){
+            elementTwo.innerHTML = 'total : '+sum(input2_num)
+        }
+    } 
+    function sum(number){
+            let total = 0;
+            for(let i = 1;i <= number; i++){
+                total += i
+            }
+            return  total
+    }
+    function req3(){
+        const input3_1 = document.getElementById("input3_1").value;
+        const input3_2 = document.getElementById("input3_2").value;
+        const elementThree = document.getElementById("req-3");
+        const num3_1 = parseFloat(input3_1);
+        const num3_2 = parseFloat(input3_2);
+        if((num3_1 !== NaN) & (num3_2 !== NaN)){
+            const total = num3_1 + num3_2;
+            elementThree.innerHTML = 'Total : '+total
+        }
+    }
+</script>
+    
+</body>
+</html>
