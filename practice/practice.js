@@ -27,7 +27,16 @@ for (const[question,answer] of quiz){
 
 alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);*/
 
-function sing(song,callback) {
+/*function sing(song,callback) {
     console.log(`I'm singing along to ${song}.`);
     callback();
+}*/
+
+function person(age){
+    this.age = age;
 }
+const greg = new person(22)
+const thomas = new person(25)
+
+console.log(greg)
+console.log(thomas)
