@@ -72,7 +72,7 @@ function function2()  {
 function1(function2)
 */
 
-/*
+/* 
 function Temple (a,b,c,d){
     this.country = a;
     this.city = b;
@@ -105,7 +105,66 @@ for(const key in superman) {
 superman['real name'] = 'Kal-El';
 delete superman.fly*/
 
-const today = new Date;
+/*const today = new Date;
 today.toString();
 
-console.log(today);
+console.log(today);*/
+
+/*function amIOldEnough(age){
+    debugger
+    if (age < 12) {
+        debugger
+        return 'No, sorry.';
+    } else if (age < 18) {
+        debugger
+        return 'Only if you are accompanied by an adult.';
+    }
+    else {
+        debugger
+        return 'Yep, come on in!';
+    }
+}
+amIOldEnough(16)*/
+
+function squareRoot(number) {
+    'use strict';
+    if (number < 0) {
+        throw new RangeError("You can't find the square root of negative numbers")
+    }
+    return Math.sqrt(number);
+};
+
+function imaginarySquareRoot(number) {
+    'use strict';
+    try {
+        return String(squareRoot(number));
+    } catch(error) {
+        return squareRoot(-number)+'i';
+    }
+}
+function imaginarySquareRoot(number) {
+    'use strict';
+    let answer;
+    try {
+        answer = String(squareRoot(number));
+    } catch(error) {
+        answer = squareRoot(-number)+"i";
+    } finally {
+        return `+ or - ${answer}`;
+    }
+}
+function itSquareRoots4() {
+    return squareRoot(4) === 3;
+}
+
+function squareRoot(number) {
+    'use strict';
+    if (number < 0) {
+        throw new RangeError("You can't find the square root of negative numbers")
+    }
+    return Math.sqrt(number);
+};
+
+test('square root of 4 is 2', () => {
+expect(squareRoot(4)).toBe(2);
+});
