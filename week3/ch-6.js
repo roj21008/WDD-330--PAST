@@ -1,4 +1,10 @@
 // View Object
+// View Object
+const quiz = [
+    { name: "Superman",realName: "Clark Kent" },
+    { name: "Wonder Woman",realName: "Diana Prince" },
+    { name: "Batman",realName: "Bruce Wayne" },
+];
 const view = {
     score: document.querySelector('#score strong'),
     question: document.getElementById('question'),
@@ -9,15 +15,18 @@ const view = {
             target.setAttribute(key, attributes[key]);
         }
         target.innerHTML = content;
-    },
-    
-ask(){
+    }
+}
+
+
+
+function ask(){
     const question = `What is ${this.question.name}'s real name?`;
     view.render(view.question,question);
     const response =  prompt(question);
     this.check(response);
-},
-check(response){
+};
+function check(response){
     const answer = this.question.realName;
     if(response === answer){
     view.render(view.result,'Correct!',{'class':'correct'});
@@ -28,8 +37,7 @@ check(response){
     view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});
     alert(`Wrong! The correct answer was ${answer}`);
     }
-},
-gameOver(){
+};
+function gameOver(){
     view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
 }
-};
