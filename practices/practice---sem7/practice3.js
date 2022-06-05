@@ -3,13 +3,14 @@ form.addEventListener('submit', addTask, false);
 
 function addTask(event) {
     event.preventDefault();
-    const number = form.task.value;
+    const task = new FormData(form);// reemplaqza al codigo d elas siguientes lineas en verde
+    /*const number = form.task.value;
     const task = {
         userId: 1,
         title: form.task.value,
         completed: false
     }
-    const data = JSON.stringify(task);
+    const data = JSON.stringify(task);*/
     const url = 'https://jsonplaceholder.typicode.com/todos';
 
     const headers = new Headers({
@@ -19,8 +20,11 @@ function addTask(event) {
     const request = new Request(url,
     {
         method: 'POST',
+        mode: 'cors',
         header: headers,
-        body: data
+        body: JSON.stringify(task)
+              
+        
     }
     )
 
