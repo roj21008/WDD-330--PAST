@@ -1,0 +1,20 @@
+
+.titulo{
+    background-color: rgb(7, 94, 14);
+    color:white;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.titulo:hover{
+    color: brown;
+    background-color: burlywood;
+    transform: translate(45px, 145px)
+}
+
+.ad-ad2 h1:hover span {
+    color: #484848;  
+    transform: translateX(40px);
+    display: inline-block;
+}
