@@ -11,28 +11,27 @@
 
     <h1>VALIDATING FORMS</h1>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>JavaScript validation is coded using JavaScript. This validation is fully customizable, but you must create the whole thing (or use a library).</li>
+        <li>If the data entered in a form field follows all the rules specified by the above attributes, it is considered valid. If not, it is considered invalid.</li>
+        <li>The presence of the required attribute on any element that supports this attribute means that the element matches the :requiredpseudoclass, whether or not it has a value.</li>
+        <li>You should use JavaScript if you want to control the appearance of native error messages or to deal with legacy browsers that don't support HTML's built-in form validation.</li>
+        <li>There is no standard way to change its appearance with CSS.</li>
+        <li>Depend on browser locale, which means you can have a page in one language but an error message is displayed in another language,</li>
+        <li>You must determine how to validate your data: string operations, type conversion, regular expressions, etc. Up to you.</li>
+        <li>To reduce user frustration, it is very important to provide as much useful information as possible to guide them in correcting their entries. You should offer hints up front so they know what to expect, as well as clear error messages.</li>
        
     </ul>
 
 <br><br>
-<h1>API HTML 5</h1>
-<ul>
-    <li>The restriction of using only a string value can be overcome by encoding any JavaScript object or value as a JSON string and then performing a type conversion later as needed.</li>
-    <li>Data attributes provide a convenient way to add data directly into HTML markup, allowing for a richer user experience.</li>
-    <li>The fact that only strings can be saved may seem like a restriction at first, but by using JSON, we can store any JavaScript object in local storage</li>
-    <li>The Web Storage API allows key-value pairs to be stored on the user's device in a similar way to cookies, but without the same storage restrictions.</li>  <li></li>
-</ul>
+<h1>FETCH API</h1>
+<li>Provides a global fetch() method that provides an easy and logical way to asynchronously fetch resources over the network.</li>
+<li>The Response object, in turn, does not directly contain the actual JSON response body, but rather is a representation of the full HTTP response.</li>
+<li>To make browsers send a request with included credentials in same-origin and cross-origin calls, add credentials: 'include' to the init object you pass to the fetch() method.</li>
+<li>A fetch() promise will be rejected with a TypeError when a network error is encountered or CORS is misconfigured on the server side</li>
+<li>All header methods throw a TypeError if a header name is used that is not a valid HTTP header name.</li>
 
 
-    <script src="main.js"></script>
+    
 </body>
  
 </html>
