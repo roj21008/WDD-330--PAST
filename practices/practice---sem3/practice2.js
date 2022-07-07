@@ -12,4 +12,6 @@ const heroes = document.getElementById('roster');
 const superman = heroes.children[0];
 
 superman.style.color = 'red';
-superman.style.border = 'solid 2px red';
+superman.style.border = 'solid 2px red'; 
+
+

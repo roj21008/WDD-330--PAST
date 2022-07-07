@@ -1,4 +1,10 @@
-import QuakesController from './QuakesController.js';
+import QuakesController from './controller.js';
+const listElement = '#quakeList';
+const InstantaceQuake = new QuakesController(listElement);
 
-const myQuakesController = new QuakesController('#quakeList');
-myQuakesController.init();
+InstantaceQuake.init();
+
+document.getRadius = function getRadius() {
+  const rad = document.getElementById('radius').value;
+  InstantaceQuake.getQuakesByRadius(rad);
+};
