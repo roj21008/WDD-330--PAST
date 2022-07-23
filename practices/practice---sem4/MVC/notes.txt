@@ -1,0 +1,32 @@
+El estudiante puede crear con éxito una
+aplicación de una sola página (SPA) usando 
+ HTML, Javascript y CSS. El estudiante aplica
+las mejores prácticas de diseño de aplicaciones 
+móviles en sus aplicaciones.
+El estudiante puede manipular el DOM con
+Javascript El estudiante puede utilizar eficazmente
+detectores de eventos con Javascript para manejar
+ los eventos de los usuarios.
+ El estudiante puede extraer datos de una
+  fuente externa (archivo o API) con Javascript.
+ El estudiante se esfuerza por organizar su 
+ código utilizando objetos, clases, módulos, 
+ separación de preocupaciones o una filosofía
+  arquitectónica como MVC. El estudiante hace 
+  un uso efectivo de las transiciones/animaciones
+   CSS en sus aplicaciones.
+
+
+Una estructura de carpetas típica basada en el tipo podría tener el siguiente aspecto:
+
+*origen
+    *CSS
+    *JS
+    *puntos de vista
+    *pruebas
+*dist
+    *índice.html
+    *paquete.min.js
+*paquete.json
+*node_modules
+*README

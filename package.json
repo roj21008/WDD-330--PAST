@@ -1,0 +1,22 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roj21008/WDD-330.git"
+  },
+  "keywords": [
+    "luis"
+  ],
+  "author": "Luis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roj21008/WDD-330/issues"
+  },
+  "homepage": "https://github.com/roj21008/WDD-330#readme"
+}
