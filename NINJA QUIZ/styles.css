@@ -42,7 +42,7 @@ button {
 }
 
 #result{
-    color: rgb(245, 233, 233);
+    color: #fff;
     margin: 0.2em 0;
     width: 100%;
     text-align: center;
@@ -53,9 +53,4 @@ button {
 .wrong {
     color: #fff;
     background-color: #c00;
-}
-form input{
-    margin: auto;
-    width: 98%;
-    text-align: center;
 }
