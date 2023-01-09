@@ -1,5 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 #link {
 background-color: blue;
 width: 3rem;
 height: 1rem;
+}
+
+.card{
+    border: 3px solid green;
+    width: 320px;
+    height: 450px;
+}
+.card-img{
+    border: 2px solid red;
+   height: 80%;
+
+}
+.card-img-top{
+    width: 100%;
+    height: 100%
+}
+.card-body{
+    border: 2px solid blue;
+    height: 20%;
+}
+
+.list-random{
+    border: 2px solid red;
+    width: 250px;
+}
+.lis-real{
+    border: 3px solid green;
+    width: 100%;
+    height: 500px;
 }

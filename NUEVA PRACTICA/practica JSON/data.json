@@ -1,0 +1,23 @@
+[
+    {
+        "nombre" : "Luis",
+        "apellido" : "Rojas",
+         "Birth":"19 jul 1984"
+        
+    },
+    {
+        "nombre" : "Sandra",
+        "apellido" : "Cabrera",
+        "Birth":"2 dic 1988"
+    },    
+    {
+        "nombre" : "Valentina",
+        "apellido" : "Rojas Cabrera",
+        "Birth":"11 nov 2009"
+    },
+    {
+        "nombre" : "Joaquin",
+        "apellido" : "Rojas Cabrera",
+        "Birth": "12 dic 2015"
+    }
+]
